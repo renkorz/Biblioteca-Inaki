@@ -3,6 +3,9 @@ from auxiliares import constantes
 import detalle_libro
 import usuario
 
+# Importar "datetime" tanto para agregarle el tiempo como para tambien generar un codigo que ayude a
+# facilitar los dias del prestamo consevido hasta el tiempo de finalización de este mismo.
+
 class Prestamo(detalle_libro, usuario):
     def __init__(self, id_prestamo, isbn, id_usuario, fecha_prestamo, fecha_devolucion, fecha_devuelto, cantidad_solicitada):
         detalle_libro.__init__(isbn)

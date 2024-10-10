@@ -1,5 +1,9 @@
 import re
 
+# Importamos "re" (RegEx) que es una secuencia de caracteres 
+# que forma un patrón de búsqueda. 
+# RegEx se puede utilizar para comprobar si una cadena contiene el patrón de búsqueda especificado.
+
 class Editorial():
     def __init__(self, id_editorial, nombre_editorial, fecha_fundacion, codigo_pais, telefono_contacto, correo_contacto):
         self.id_editorial = id_editorial

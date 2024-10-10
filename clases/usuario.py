@@ -3,6 +3,10 @@ import tipo_usuario
 import re
 from rut_chile import rut_chile
 
+# Se agrega un import llamado "rut_chile", que instalamos de manera externa en la terminal como "pip",
+# para que podamos agregar o manejar el rut de un usuario.
+# Volvemos a utilizar el "re" ya explicado en otra sub clase.
+
 class Usuario(paises, tipo_usuario):
     def __init__(self, id_usuario, nombre_usuario, correo_usuario, telefono_usuario, rut_usuario, codigo_pais, habilitado, id_tipo_usuario, fecha_creacion):
         paises.__init__(codigo_pais)

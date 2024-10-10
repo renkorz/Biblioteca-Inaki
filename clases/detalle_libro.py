@@ -1,6 +1,9 @@
 import libro
 import editorial
 
+# Importamos "libro" y "editorial" para complementar la clase "Detalle_Libro"
+# y asi poder ingresarle los datos de la base de datos. ajsdnad
+
 class Detalle_Libro(libro, editorial):
     def __init__(self, id_detalle_libro, isbn, fecha_edicion, id_editorial, numero_paginas, id_categoria_libro, cantidad_ejemplares, ejemplares_disponibles):
         libro.__init__(isbn)
