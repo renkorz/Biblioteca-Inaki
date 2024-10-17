@@ -12,30 +12,8 @@ cur = cnx.cursor()
 
 cur.execute("SELECT * FROM autor")
 
-for filas in cur:
-    print(filas)
-
-
-cnx.close()
-
-import mysql.connector
-
-# Connect to server
-cnx = mysql.connector.connect(
-    host="127.0.0.1",
-    port=3306,
-    user="mike",
-    password="s3cre3t!")
-
-# Get a cursor
-cur = cnx.cursor()
-
-# Execute a query
-cur.execute("SELECT CURDATE()")
-
-# Fetch one result
 row = cur.fetchone()
-print("Current date is: {0}".format(row[0]))
+for nombre_autor in cur:
+    print(nombre_autor)
 
-# Close connection
 cnx.close()
